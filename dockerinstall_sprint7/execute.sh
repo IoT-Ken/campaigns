@@ -19,8 +19,8 @@ cd $dirname
 echo "This is the script: execute" >> /tmp/campaign.log
 
 ## Call Docker Install Script 
-chmod +x dockermonitor-configure.sh
-./dockermonitor-configure.sh &
+chmod +x dockerinstall.sh
+./dockerinstall.sh &
 RESULT=$?
 if [ $RESULT -eq 0 ]; then
     echo "execute.sh executed successfully" >> /tmp/campaign.log
